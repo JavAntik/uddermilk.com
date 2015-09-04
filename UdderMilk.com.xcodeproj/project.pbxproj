@@ -15,6 +15,8 @@
 		9C9EBE6F1B95224B009A9670 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9EBE6D1B95224B009A9670 /* LaunchScreen.storyboard */; };
 		9C9EBE7A1B95224B009A9670 /* UdderMilk_comTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EBE791B95224B009A9670 /* UdderMilk_comTests.swift */; };
 		9C9EBE851B95224B009A9670 /* UdderMilk_comUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EBE841B95224B009A9670 /* UdderMilk_comUITests.swift */; };
+		9C9EBEBA1B9A4838009A9670 /* CategoriesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EBEB91B9A4838009A9670 /* CategoriesLoader.swift */; settings = {ASSET_TAGS = (); }; };
+		9C9EBEBC1B9A4848009A9670 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EBEBB1B9A4848009A9670 /* Category.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		9C9EBE801B95224B009A9670 /* UdderMilk.comUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UdderMilk.comUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C9EBE841B95224B009A9670 /* UdderMilk_comUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdderMilk_comUITests.swift; sourceTree = "<group>"; };
 		9C9EBE861B95224B009A9670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C9EBEB91B9A4838009A9670 /* CategoriesLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesLoader.swift; sourceTree = "<group>"; };
+		9C9EBEBB1B9A4848009A9670 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		9C9EBE611B95224B009A9670 /* UdderMilk.com */ = {
 			isa = PBXGroup;
 			children = (
+				9C9EBEB81B9A4807009A9670 /* category */,
 				9C9EBE621B95224B009A9670 /* AppDelegate.swift */,
 				9C9EBE641B95224B009A9670 /* MasterViewController.swift */,
 				9C9EBE661B95224B009A9670 /* DetailViewController.swift */,
@@ -126,6 +131,15 @@
 				9C9EBE861B95224B009A9670 /* Info.plist */,
 			);
 			path = UdderMilk.comUITests;
+			sourceTree = "<group>";
+		};
+		9C9EBEB81B9A4807009A9670 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				9C9EBEB91B9A4838009A9670 /* CategoriesLoader.swift */,
+				9C9EBEBB1B9A4848009A9670 /* Category.swift */,
+			);
+			name = category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +276,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C9EBE671B95224B009A9670 /* DetailViewController.swift in Sources */,
+				9C9EBEBC1B9A4848009A9670 /* Category.swift in Sources */,
 				9C9EBE651B95224B009A9670 /* MasterViewController.swift in Sources */,
+				9C9EBEBA1B9A4838009A9670 /* CategoriesLoader.swift in Sources */,
 				9C9EBE631B95224B009A9670 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,7 +423,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UdderMilk.com/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.javantik.UdderMilk-com";
+				PRODUCT_BUNDLE_IDENTIFIER = com.javantik.UdderMilk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -418,7 +434,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UdderMilk.com/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.javantik.UdderMilk-com";
+				PRODUCT_BUNDLE_IDENTIFIER = com.javantik.UdderMilk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
