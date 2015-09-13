@@ -15,8 +15,8 @@
 		9C9EBE6F1B95224B009A9670 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9EBE6D1B95224B009A9670 /* LaunchScreen.storyboard */; };
 		9C9EBE7A1B95224B009A9670 /* UdderMilk_comTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EBE791B95224B009A9670 /* UdderMilk_comTests.swift */; };
 		9C9EBE851B95224B009A9670 /* UdderMilk_comUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EBE841B95224B009A9670 /* UdderMilk_comUITests.swift */; };
-		9C9EBEBA1B9A4838009A9670 /* CategoriesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EBEB91B9A4838009A9670 /* CategoriesLoader.swift */; settings = {ASSET_TAGS = (); }; };
-		9C9EBEBC1B9A4848009A9670 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EBEBB1B9A4848009A9670 /* Category.swift */; settings = {ASSET_TAGS = (); }; };
+		9C9EBEBA1B9A4838009A9670 /* CategoriesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EBEB91B9A4838009A9670 /* CategoriesLoader.swift */; };
+		9C9EBEBC1B9A4848009A9670 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EBEBB1B9A4848009A9670 /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -204,6 +204,7 @@
 		9C9EBE571B95224B009A9670 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Anton Baranchuk";
 				TargetAttributes = {
@@ -506,6 +507,7 @@
 				9C9EBE8B1B95224B009A9670 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C9EBE8C1B95224B009A9670 /* Build configuration list for PBXNativeTarget "UdderMilk.comTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +516,7 @@
 				9C9EBE8E1B95224B009A9670 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C9EBE8F1B95224B009A9670 /* Build configuration list for PBXNativeTarget "UdderMilk.comUITests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +525,7 @@
 				9C9EBE911B95224B009A9670 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

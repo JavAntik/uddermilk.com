@@ -2,7 +2,7 @@
 //  Category.swift
 //  UdderMilk.com
 //
-//  Created by Marina Markova on 9/4/15.
+//  Created by Anton Baranchuk on 9/4/15.
 //  Copyright © 2015 Anton Baranchuk. All rights reserved.
 //
 

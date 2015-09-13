@@ -2,7 +2,7 @@
 //  MasterViewController.swift
 //  UdderMilk.com
 //
-//  Created by Marina Markova on 8/31/15.
+//  Created by Anton Baranchuk on 8/31/15.
 //  Copyright © 2015 Anton Baranchuk. All rights reserved.
 //
 
