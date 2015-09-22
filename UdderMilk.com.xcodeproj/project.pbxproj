@@ -18,6 +18,10 @@
 		9C9EBE851B95224B009A9670 /* UdderMilk_comUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EBE841B95224B009A9670 /* UdderMilk_comUITests.swift */; };
 		9C9EBEBA1B9A4838009A9670 /* CategoriesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EBEB91B9A4838009A9670 /* CategoriesLoader.swift */; };
 		9C9EBEBC1B9A4848009A9670 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EBEBB1B9A4848009A9670 /* Category.swift */; };
+		9CDC1DB71BB0FB7B006A7A44 /* eggs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9CDC1DB61BB0FB7B006A7A44 /* eggs.jpg */; };
+		9CDC1DBB1BB0FB99006A7A44 /* goatCheese.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9CDC1DB81BB0FB99006A7A44 /* goatCheese.jpg */; };
+		9CDC1DBC1BB0FB99006A7A44 /* honey1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9CDC1DB91BB0FB99006A7A44 /* honey1.jpg */; };
+		9CDC1DBD1BB0FB99006A7A44 /* meat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9CDC1DBA1BB0FB99006A7A44 /* meat.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		9C9EBE861B95224B009A9670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C9EBEB91B9A4838009A9670 /* CategoriesLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesLoader.swift; sourceTree = "<group>"; };
 		9C9EBEBB1B9A4848009A9670 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		9CDC1DB61BB0FB7B006A7A44 /* eggs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eggs.jpg; sourceTree = "<group>"; };
+		9CDC1DB81BB0FB99006A7A44 /* goatCheese.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = goatCheese.jpg; sourceTree = "<group>"; };
+		9CDC1DB91BB0FB99006A7A44 /* honey1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = honey1.jpg; sourceTree = "<group>"; };
+		9CDC1DBA1BB0FB99006A7A44 /* meat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meat.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,13 +113,13 @@
 		9C9EBE611B95224B009A9670 /* UdderMilk.com */ = {
 			isa = PBXGroup;
 			children = (
+				9CDC1DB51BB0FB58006A7A44 /* images */,
 				9C9EBEB81B9A4807009A9670 /* category */,
 				9C9EBE621B95224B009A9670 /* AppDelegate.swift */,
 				9C9EBE641B95224B009A9670 /* MasterViewController.swift */,
 				9C9EBE661B95224B009A9670 /* DetailViewController.swift */,
 				9C9EBE681B95224B009A9670 /* Main.storyboard */,
 				9C9EBE6B1B95224B009A9670 /* Assets.xcassets */,
-				9C10F98F1BA7C5D300C5744B /* COW1.jpg */,
 				9C9EBE6D1B95224B009A9670 /* LaunchScreen.storyboard */,
 				9C9EBE701B95224B009A9670 /* Info.plist */,
 			);
@@ -143,6 +151,18 @@
 				9C9EBEBB1B9A4848009A9670 /* Category.swift */,
 			);
 			name = category;
+			sourceTree = "<group>";
+		};
+		9CDC1DB51BB0FB58006A7A44 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				9C10F98F1BA7C5D300C5744B /* COW1.jpg */,
+				9CDC1DB61BB0FB7B006A7A44 /* eggs.jpg */,
+				9CDC1DB81BB0FB99006A7A44 /* goatCheese.jpg */,
+				9CDC1DB91BB0FB99006A7A44 /* honey1.jpg */,
+				9CDC1DBA1BB0FB99006A7A44 /* meat.jpg */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,9 +273,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C9EBE6F1B95224B009A9670 /* LaunchScreen.storyboard in Resources */,
+				9CDC1DB71BB0FB7B006A7A44 /* eggs.jpg in Resources */,
 				9C10F9901BA7C5D300C5744B /* COW1.jpg in Resources */,
 				9C9EBE6C1B95224B009A9670 /* Assets.xcassets in Resources */,
 				9C9EBE6A1B95224B009A9670 /* Main.storyboard in Resources */,
+				9CDC1DBB1BB0FB99006A7A44 /* goatCheese.jpg in Resources */,
+				9CDC1DBD1BB0FB99006A7A44 /* meat.jpg in Resources */,
+				9CDC1DBC1BB0FB99006A7A44 /* honey1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

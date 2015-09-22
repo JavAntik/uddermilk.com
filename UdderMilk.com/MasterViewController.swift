@@ -63,12 +63,13 @@ class MasterViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-        let myImage = UIImage(named: "COW1.jpg")
-        let myImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 150, height: 100))
+        let myImage = UIImage(named: categories[indexPath.row].image)
+        let myImageView = UIImageView(frame: CGRect(x: 96, y: 0, width: 150, height: 100))
         myImageView.image = myImage
         cell.addSubview(myImageView)
         cell.textLabel!.setNeedsDisplayInRect(CGRect(x: 100, y: 100, width: 100, height: 100))
-        cell.textLabel!.text = "\r\n\r\n\r\n\r\n" + categories[indexPath.row].name 
+        cell.textLabel!.text = "\r\n\r\n\r\n\r\n" + categories[indexPath.row].name
+        cell.textLabel!.textAlignment = .Center
         return cell
     }
 

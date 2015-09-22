@@ -11,9 +11,11 @@ import Foundation
 class Category {
     let name: String
     let description: String
+    let image: String
     
-    init(name: String, description: String) {
+    init(name: String, description: String, image: String) {
         self.name = name
         self.description = description
+        self.image = image
     }
 }

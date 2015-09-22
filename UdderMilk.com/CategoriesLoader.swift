@@ -11,8 +11,11 @@ import Foundation
 class CategoriesLoader {
     func getCategories() -> [Category]{
         var categories = [Category]()
-        categories.append(Category(name: "milk", description: "cow's milk products"))
-        categories.append(Category(name: "meat", description: "beef, pork, cheaken"))
+        categories.append(Category(name: "Eggs", description: "cow's milk products", image: "eggs.jpg"))
+        categories.append(Category(name: "Goat Cheese", description: "cow's milk products", image: "goatCheese.jpg"))
+        categories.append(Category(name: "Honey and Maple", description: "cow's milk products", image: "honey1.jpg"))
+        categories.append(Category(name: "Cow Diary", description: "cow's milk products", image: "COW1.jpg"))
+        categories.append(Category(name: "Grass-fed Meats", description: "cow's milk products", image: "meat.jpg"))
         return categories
     }
 }
