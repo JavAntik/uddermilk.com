@@ -81,7 +81,9 @@
                             <outlet property="delegate" destination="7bK-jq-Zjz" id="RA6-mI-bju"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Welcome to UdderMilk.com" id="c5U-CO-GKF"/>
+                    <navigationItem key="navigationItem" title="Welcome to UdderMilk.com" id="c5U-CO-GKF">
+                        <barButtonItem key="leftBarButtonItem" image="menu-alt-16" id="8bA-GC-tWS"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
@@ -142,6 +144,9 @@
             <point key="canvasLocation" x="-99" y="171"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="menu-alt-16" width="16" height="16"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6S0-TO-JiA"/>
     </inferredMetricsTieBreakers>
