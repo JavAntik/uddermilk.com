@@ -8,11 +8,41 @@
 
 import UIKit
 
+enum SlideOutState {
+    case BothCollapsed
+    case LeftPanelExpanded
+}
+
 class MasterViewController: UITableViewController {
 
     var detailViewController: CategoryItemsController? = nil
     var categories: [Category] = [Category]()
+    //var centerNavigationController: UINavigationController!
+    //var centerViewController: CenterViewController!
+    var leftViewController: SidePanelViewController?
 
+    var currentState: SlideOutState = .BothCollapsed {
+        didSet {
+            let shouldShowShadow = currentState != .BothCollapsed
+            showShadowForCenterViewController(shouldShowShadow)
+        }
+    }
+    
+    func showShadowForCenterViewController(shouldShowShadow: Bool) {
+        if (shouldShowShadow) {
+            //view.layer.shadowOpacity = 0.8
+        } else {
+            //view.layer.shadowOpacity = 0.0
+        }
+    }
+    //var delegate: CenterViewControllerDelegate?
+    
+    // MARK: Button actions
+    
+    @IBAction func menuTapped(sender: AnyObject) {
+        toggleLeftPanel()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         categories = CategoriesLoader().getCategories()
@@ -81,5 +111,77 @@ class MasterViewController: UITableViewController {
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
     }
 
+    
+    
+    
+    
+    
+    func toggleLeftPanel() {
+        let notAlreadyExpanded = (currentState != .LeftPanelExpanded)
+        
+        if notAlreadyExpanded {
+            addLeftPanelViewController()
+        }
+        
+        animateLeftPanel(shouldExpand: notAlreadyExpanded)
+    }
+    
+    func collapseSidePanels() {
+        switch (currentState) {
+        case .LeftPanelExpanded:
+            toggleLeftPanel()
+        default:
+            break
+        }
+    }
+    
+    func addLeftPanelViewController() {
+        if (leftViewController == nil) {
+            leftViewController = UIStoryboard.leftViewController()
+            addChildSidePanelController(leftViewController!)
+        }
+    }
+    
+    func addChildSidePanelController(sidePanelController: SidePanelViewController) {
+        sidePanelController.delegate = self
+        
+        self.splitViewController!.view.insertSubview(sidePanelController.view, atIndex: 0)
+        
+        self.splitViewController!.addChildViewController(sidePanelController)
+        sidePanelController.didMoveToParentViewController(self)
+        sidePanelController.didMoveToParentViewController(self.navigationController)
+    }
+    
+    func animateLeftPanel(shouldExpand shouldExpand: Bool) {
+        if (shouldExpand) {
+            currentState = .LeftPanelExpanded
+            
+            animateCenterPanelXPosition(targetPosition: CGRectGetWidth(view.frame) - 60)
+        } else {
+            animateCenterPanelXPosition(targetPosition: 0) { finished in
+                self.currentState = .BothCollapsed
+                self.leftViewController!.view.removeFromSuperview()
+                self.leftViewController = nil;
+            }
+        }
+    }
+    
+    func animateCenterPanelXPosition(targetPosition targetPosition: CGFloat, completion: ((Bool) -> Void)! = nil) {
+        UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .CurveEaseInOut, animations: {self.view.frame.origin.x = targetPosition}, completion: completion)
+        //self.navigationController!.view.frame.origin.x = -targetPosition
+        //UIView.animateWithDuration(0.5, delay: 1, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .CurveEaseInOut, animations: {self.navigationController!.view.frame.origin.x = targetPosition}, completion: completion)
+    }
+
 }
 
+private extension UIStoryboard {
+    class func mainStoryboard() -> UIStoryboard { return UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()) }
+    
+    class func leftViewController() -> SidePanelViewController? {
+        return mainStoryboard().instantiateViewControllerWithIdentifier("Menu") as? SidePanelViewController
+    }
+    
+    class func centerViewController1() -> CenterViewController? {
+        return mainStoryboard().instantiateViewControllerWithIdentifier("CenterViewController") as? CenterViewController
+    }
+}
