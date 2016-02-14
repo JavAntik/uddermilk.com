@@ -21,7 +21,7 @@
             </objects>
             <point key="canvasLocation" x="-468" y="-417"/>
         </scene>
-        <!--Center View Controller-->
+        <!--UdderMilk-->
         <scene sceneID="zF4-0T-NWA">
             <objects>
                 <viewController storyboardIdentifier="CenterViewController" id="b5g-YC-Gkn" customClass="CenterViewController" customModule="UdderMilk_com" customModuleProvider="target" sceneMemberID="viewController">
@@ -45,6 +45,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="UdderMilk" id="Ymf-6T-VDL">
+                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="46g-SG-nNR"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7VK-rx-Izj" userLabel="First Responder" sceneMemberID="firstResponder"/>
