@@ -10,8 +10,8 @@ import UIKit
 
 @objc
 protocol CenterViewControllerDelegate {
-    optional func toggleLeftPanel()
-    optional func toggleRightPanel()
+    optional func toggleMenu()
+    optional func toggleCart()
     optional func collapseSidePanels()
 }
 
@@ -25,17 +25,17 @@ class CenterViewController: UIViewController {
     
     // MARK: Button actions
     
-    @IBAction func kittiesTapped(sender: AnyObject) {
-        delegate?.toggleLeftPanel?()
+    @IBAction func menuTapped(sender: AnyObject) {
+        delegate?.toggleMenu?()
     }
     
-    @IBAction func puppiesTapped(sender: AnyObject) {
-        delegate?.toggleRightPanel?()
+    @IBAction func cartTapped(sender: AnyObject) {
+        delegate?.toggleCart?()
     }
     
 }
 
-extension CenterViewController: SidePanelViewControllerDelegate {
+extension CenterViewController: CenterViewControllerDelegate {
     func itemSelected(item: String) {
         //creatorLabel.text = animal.creator
         

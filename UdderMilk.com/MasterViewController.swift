@@ -8,11 +8,6 @@
 
 import UIKit
 
-enum SlideOutState {
-    case BothCollapsed
-    case LeftPanelExpanded
-}
-
 class MasterViewController: UITableViewController {
 
     var detailViewController: CategoryItemsController? = nil
@@ -21,9 +16,9 @@ class MasterViewController: UITableViewController {
     //var centerViewController: CenterViewController!
     var leftViewController: SidePanelViewController?
 
-    var currentState: SlideOutState = .BothCollapsed {
+    var currentState: SlideOutState = .AllCollapsed {
         didSet {
-            let shouldShowShadow = currentState != .BothCollapsed
+            let shouldShowShadow = currentState != .AllCollapsed
             showShadowForCenterViewController(shouldShowShadow)
         }
     }
@@ -117,19 +112,19 @@ class MasterViewController: UITableViewController {
     
     
     func toggleLeftPanel() {
-        let notAlreadyExpanded = (currentState != .LeftPanelExpanded)
+        //let notAlreadyExpanded = (currentState != .LeftPanelExpanded)
         
-        if notAlreadyExpanded {
+        //if notAlreadyExpanded {
             addLeftPanelViewController()
-        }
+        //}
         
-        animateLeftPanel(shouldExpand: notAlreadyExpanded)
+        //animateLeftPanel(shouldExpand: notAlreadyExpanded)
     }
     
     func collapseSidePanels() {
         switch (currentState) {
-        case .LeftPanelExpanded:
-            toggleLeftPanel()
+        //case .LeftPanelExpanded:
+        //    toggleLeftPanel()
         default:
             break
         }
@@ -154,12 +149,12 @@ class MasterViewController: UITableViewController {
     
     func animateLeftPanel(shouldExpand shouldExpand: Bool) {
         if (shouldExpand) {
-            currentState = .LeftPanelExpanded
+            //currentState = .LeftPanelExpanded
             
             animateCenterPanelXPosition(targetPosition: CGRectGetWidth(view.frame) - 60)
         } else {
             animateCenterPanelXPosition(targetPosition: 0) { finished in
-                self.currentState = .BothCollapsed
+                //self.currentState = .BothCollapsed
                 self.leftViewController!.view.removeFromSuperview()
                 self.leftViewController = nil;
             }
