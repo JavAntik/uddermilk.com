@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		9C36BCCC1BB3806000792970 /* CategoryItemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36BCCB1BB3806000792970 /* CategoryItemsController.swift */; };
 		9C3CA9E81BD30BF400F99666 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3CA9E71BD30BF400F99666 /* CenterViewController.swift */; };
-		9C3CA9EA1BD44F6300F99666 /* SidePanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3CA9E91BD44F6300F99666 /* SidePanelViewController.swift */; };
+		9C3CA9EA1BD44F6300F99666 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3CA9E91BD44F6300F99666 /* MenuViewController.swift */; };
 		9C4471251C710BD800362DAF /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4471241C710BD800362DAF /* ContainerViewController.swift */; };
 		9C9D39231BBCD470009CB351 /* COW1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C9D39221BBCD470009CB351 /* COW1.jpg */; };
 		9C9D39251BBCD4BA009CB351 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C9D39241BBCD4BA009CB351 /* logo.png */; };
@@ -48,7 +48,7 @@
 /* Begin PBXFileReference section */
 		9C36BCCB1BB3806000792970 /* CategoryItemsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryItemsController.swift; sourceTree = "<group>"; };
 		9C3CA9E71BD30BF400F99666 /* CenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
-		9C3CA9E91BD44F6300F99666 /* SidePanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidePanelViewController.swift; sourceTree = "<group>"; };
+		9C3CA9E91BD44F6300F99666 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		9C4471241C710BD800362DAF /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		9C9D39221BBCD470009CB351 /* COW1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = COW1.jpg; sourceTree = "<group>"; };
 		9C9D39241BBCD4BA009CB351 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 				9C9EBEB81B9A4807009A9670 /* category */,
 				9C9EBE621B95224B009A9670 /* AppDelegate.swift */,
 				9C9EBE641B95224B009A9670 /* MasterViewController.swift */,
-				9C3CA9E91BD44F6300F99666 /* SidePanelViewController.swift */,
+				9C3CA9E91BD44F6300F99666 /* MenuViewController.swift */,
 				9C9EBE681B95224B009A9670 /* Main.storyboard */,
 				9C9EBE6B1B95224B009A9670 /* Assets.xcassets */,
 				9C9EBE6D1B95224B009A9670 /* LaunchScreen.storyboard */,
@@ -322,7 +322,7 @@
 				9C4471251C710BD800362DAF /* ContainerViewController.swift in Sources */,
 				9C9EBE651B95224B009A9670 /* MasterViewController.swift in Sources */,
 				9C3CA9E81BD30BF400F99666 /* CenterViewController.swift in Sources */,
-				9C3CA9EA1BD44F6300F99666 /* SidePanelViewController.swift in Sources */,
+				9C3CA9EA1BD44F6300F99666 /* MenuViewController.swift in Sources */,
 				9C9EBEBA1B9A4838009A9670 /* CategoriesLoader.swift in Sources */,
 				9C9EBE631B95224B009A9670 /* AppDelegate.swift in Sources */,
 			);

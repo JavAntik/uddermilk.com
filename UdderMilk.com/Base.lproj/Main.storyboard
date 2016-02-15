@@ -46,7 +46,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="UdderMilk" id="Ymf-6T-VDL">
-                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="46g-SG-nNR"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="46g-SG-nNR">
+                            <connections>
+                                <action selector="menuTapped:" destination="b5g-YC-Gkn" id="MIh-TM-v4y"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
@@ -127,16 +131,16 @@
             </objects>
             <point key="canvasLocation" x="-99" y="-417"/>
         </scene>
-        <!--Side Panel View Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="SN5-58-ITv">
             <objects>
-                <viewController storyboardIdentifier="Menu" id="27w-Yy-MAG" customClass="SidePanelViewController" customModule="UdderMilk_com" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuViewController" id="27w-Yy-MAG" customClass="MenuViewController" customModule="UdderMilk_com" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3bM-rD-cer"/>
                         <viewControllerLayoutGuide type="bottom" id="5bh-z8-rfQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vwd-FW-XkR">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fYA-cp-MFy">
@@ -170,7 +174,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="fYA-cp-MFy" id="B5D-NO-gZ0"/>
                     </connections>

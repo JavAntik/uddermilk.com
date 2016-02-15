@@ -14,7 +14,7 @@ class MasterViewController: UITableViewController {
     var categories: [Category] = [Category]()
     //var centerNavigationController: UINavigationController!
     //var centerViewController: CenterViewController!
-    var leftViewController: SidePanelViewController?
+    var leftViewController: MenuViewController?
 
     var currentState: SlideOutState = .AllCollapsed {
         didSet {
@@ -137,7 +137,7 @@ class MasterViewController: UITableViewController {
         }
     }
     
-    func addChildSidePanelController(sidePanelController: SidePanelViewController) {
+    func addChildSidePanelController(sidePanelController: MenuViewController) {
         sidePanelController.delegate = self
         
         self.splitViewController!.view.insertSubview(sidePanelController.view, atIndex: 0)
@@ -172,8 +172,8 @@ class MasterViewController: UITableViewController {
 private extension UIStoryboard {
     class func mainStoryboard() -> UIStoryboard { return UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()) }
     
-    class func leftViewController() -> SidePanelViewController? {
-        return mainStoryboard().instantiateViewControllerWithIdentifier("Menu") as? SidePanelViewController
+    class func leftViewController() -> MenuViewController? {
+        return mainStoryboard().instantiateViewControllerWithIdentifier("Menu") as? MenuViewController
     }
     
     class func centerViewController1() -> CenterViewController? {

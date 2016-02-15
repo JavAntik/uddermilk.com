@@ -13,7 +13,7 @@ protocol SidePanelViewControllerDelegate {
     func itemSelected(item: String)
 }
 
-class SidePanelViewController: UIViewController {
+class MenuViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     var delegate: MasterViewController?
@@ -52,7 +52,7 @@ class SidePanelViewController: UIViewController {
 
 }
 
-extension SidePanelViewController: UITableViewDataSource {
+extension MenuViewController: UITableViewDataSource {
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -72,7 +72,7 @@ extension SidePanelViewController: UITableViewDataSource {
 
 // Mark: Table View Delegate
 
-extension SidePanelViewController: UITableViewDelegate {
+extension MenuViewController: UITableViewDelegate {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         //let selectedItem = items[indexPath.row]

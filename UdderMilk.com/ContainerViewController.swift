@@ -17,6 +17,7 @@ enum SlideOutState {
 class ContainerViewController: UIViewController {
     var centerNavigationController: UINavigationController!
     var centerViewController: CenterViewController!
+    var menuViewController: MenuViewController!
     
     var currentState: SlideOutState = .AllCollapsed
     
@@ -55,9 +56,12 @@ extension ContainerViewController: CenterViewControllerDelegate {
     }
     
     func addMenuViewController() {
-
+        if (menuViewController == nil) {
+            menuViewController = UIStoryboard.menuViewController()
+            addChildSidePanelController(menuViewController)
+        }
     }
-    func addChildSidePanelController(sidePanelController: SidePanelViewController) {
+    func addChildSidePanelController(sidePanelController: MenuViewController) {
         view.insertSubview(sidePanelController.view, atIndex: 0)
         
         addChildViewController(sidePanelController)
@@ -93,13 +97,13 @@ extension ContainerViewController: CenterViewControllerDelegate {
     private extension UIStoryboard {
         class func mainStoryboard() -> UIStoryboard { return UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()) }
         
-        class func leftViewController() -> SidePanelViewController? {
-            return mainStoryboard().instantiateViewControllerWithIdentifier("LeftViewController") as? SidePanelViewController
+        class func menuViewController() -> MenuViewController? {
+            return mainStoryboard().instantiateViewControllerWithIdentifier("MenuViewController") as? MenuViewController
         }
         
-        class func rightViewController() -> SidePanelViewController? {
-            return mainStoryboard().instantiateViewControllerWithIdentifier("RightViewController") as? SidePanelViewController
-        }
+        //class func rightViewController() -> SidePanelViewController? {
+        //    return mainStoryboard().instantiateViewControllerWithIdentifier("RightViewController") as? SidePanelViewController
+        //}
         
         class func centerViewController() -> CenterViewController? {
             return mainStoryboard().instantiateViewControllerWithIdentifier("CenterViewController") as? CenterViewController
