@@ -39,7 +39,7 @@
                                     <constraint firstAttribute="width" constant="179" id="3LD-6g-z2p"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -56,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7VK-rx-Izj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-843" y="-531"/>
+            <point key="canvasLocation" x="-742" y="-1016"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">
@@ -155,7 +155,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sdl-Nl-1tP">
-                                                    <rect key="frame" x="19" y="-5" width="278" height="48.5"/>
+                                                    <rect key="frame" x="21" y="-5" width="278" height="48.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -169,6 +169,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="27w-Yy-MAG" id="mDE-hD-MuK"/>
+                                    <outlet property="delegate" destination="27w-Yy-MAG" id="usV-33-QK2"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -180,7 +181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v0q-BC-QE3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="251" y="-417"/>
+            <point key="canvasLocation" x="-164" y="-1016"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r7l-gg-dq7">
@@ -240,7 +241,7 @@
         <image name="menu-alt-16" width="400" height="359"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Tll-UG-LXB"/>
+        <segue reference="6S0-TO-JiA"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.58039215690000001" green="1" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
 </document>

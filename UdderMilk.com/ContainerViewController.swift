@@ -58,14 +58,16 @@ extension ContainerViewController: CenterViewControllerDelegate {
     func addMenuViewController() {
         if (menuViewController == nil) {
             menuViewController = UIStoryboard.menuViewController()
+            menuViewController.delegate = centerViewController
             addChildSidePanelController(menuViewController)
         }
     }
-    func addChildSidePanelController(sidePanelController: MenuViewController) {
-        view.insertSubview(sidePanelController.view, atIndex: 0)
+    func addChildSidePanelController(menuController: MenuViewController) {
+        menuController.delegate = centerViewController
+        view.insertSubview(menuController.view, atIndex: 0)
         
-        addChildViewController(sidePanelController)
-        sidePanelController.didMoveToParentViewController(self)
+        addChildViewController(menuController)
+        menuController.didMoveToParentViewController(self)
     }
     
     func addRightPanelViewController() {
@@ -92,20 +94,33 @@ extension ContainerViewController: CenterViewControllerDelegate {
             self.centerNavigationController.view.frame.origin.x = targetPosition
             }, completion: completion)
     }
+    
+    func itemSelected(itemId: NSInteger) {
+        collapseSidePanels()
+    }
+    
+    func collapseSidePanels() {
+        switch (currentState) {
+        case .MenuShown:
+            toggleMenu()
+        default:
+            break
+        }
+    }
 }
 
-    private extension UIStoryboard {
-        class func mainStoryboard() -> UIStoryboard { return UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()) }
+private extension UIStoryboard {
+    class func mainStoryboard() -> UIStoryboard { return UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()) }
         
-        class func menuViewController() -> MenuViewController? {
-            return mainStoryboard().instantiateViewControllerWithIdentifier("MenuViewController") as? MenuViewController
-        }
+    class func menuViewController() -> MenuViewController? {
+        return mainStoryboard().instantiateViewControllerWithIdentifier("MenuViewController") as? MenuViewController
+    }
         
         //class func rightViewController() -> SidePanelViewController? {
         //    return mainStoryboard().instantiateViewControllerWithIdentifier("RightViewController") as? SidePanelViewController
         //}
         
-        class func centerViewController() -> CenterViewController? {
-            return mainStoryboard().instantiateViewControllerWithIdentifier("CenterViewController") as? CenterViewController
-        }
+    class func centerViewController() -> CenterViewController? {
+        return mainStoryboard().instantiateViewControllerWithIdentifier("CenterViewController") as? CenterViewController
+    }
 }

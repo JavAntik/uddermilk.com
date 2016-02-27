@@ -9,14 +9,14 @@
 
 import UIKit
 
-protocol SidePanelViewControllerDelegate {
-    func itemSelected(item: String)
+protocol MenuViewControllerDelegate {
+    func menuItemSelected(item: Int)
 }
 
 class MenuViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    var delegate: MasterViewController?
+    var delegate: MenuViewControllerDelegate?
     
     var items: Array<String>!
     
@@ -48,6 +48,7 @@ class MenuViewController: UIViewController {
         menu.append("test17")
         items = menu
         super.viewDidLoad()
+        tableView.reloadData()
     }
 
 }
@@ -76,7 +77,7 @@ extension MenuViewController: UITableViewDelegate {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         //let selectedItem = items[indexPath.row]
-        //delegate?.itemSelected(selectedItem)
+        delegate?.menuItemSelected(indexPath.row)
     }
     
 }

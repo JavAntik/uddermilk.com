@@ -138,7 +138,7 @@ class MasterViewController: UITableViewController {
     }
     
     func addChildSidePanelController(sidePanelController: MenuViewController) {
-        sidePanelController.delegate = self
+        //sidePanelController.delegate = self
         
         self.splitViewController!.view.insertSubview(sidePanelController.view, atIndex: 0)
         
