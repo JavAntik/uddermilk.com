@@ -44,7 +44,7 @@ extension CenterViewController: CenterViewControllerDelegate {
 }
 extension CenterViewController: MenuViewControllerDelegate {
     func menuItemSelected(item: Int) {
-        //creatorLabel.text = animal.creator
+        titleLabel.text = "test" + String(item)
         
         delegate?.collapseSidePanels?()
     }

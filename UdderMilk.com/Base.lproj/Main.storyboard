@@ -34,7 +34,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Welcome to Udder Milk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECu-hm-utO">
-                                <rect key="frame" x="54" y="259" width="179" height="20.5"/>
+                                <rect key="frame" x="53" y="257" width="179" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="179" id="3LD-6g-z2p"/>
                                 </constraints>
@@ -53,6 +53,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="ECu-hm-utO" id="Pch-zf-HQG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7VK-rx-Izj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
