@@ -17,8 +17,8 @@ class MenuViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     var delegate: MenuViewControllerDelegate?
-    
-    var items: Array<String>!
+    var categories: [Category] = [Category]()
+
     
     struct TableView {
         struct CellIdentifiers {
@@ -27,31 +27,7 @@ class MenuViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        var menu = [String]()
-        menu.append("Shop")
-        menu.append("  Fermented Items")
-        menu.append("  Cow Cheese")
-        menu.append("  Beauty and Heal")
-        menu.append("  Condiments, Salt...")
-        menu.append("  Eggs")
-        menu.append("  Goat Cheese")
-        menu.append("  Honey and Maple")
-        menu.append("  Grss-fed meats")
-        menu.append("  Cow Diary")
-        menu.append("  Certified Orga...")
-        menu.append("  Grains, Couscouse")
-        menu.append("  Sheep Diary")
-        menu.append("  Minimum Order Adjuster")
-        menu.append("  Healthy Snacks")
-        menu.append("  Preserves, Jams")
-        menu.append("About Us")
-        menu.append("Videos")
-        menu.append("Articles")
-        menu.append("Recipes")
-        menu.append("News")
-        menu.append("Contact Us")
-        menu.append("Pickup & Delivery")
-        items = menu
+        categories = CategoriesLoader().getCategories()
         super.viewDidLoad()
         tableView.reloadData()
     }
@@ -65,12 +41,12 @@ extension MenuViewController: UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
+        return categories.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(TableView.CellIdentifiers.StringCell, forIndexPath: indexPath) as! StringCell
-        cell.configureForItem(items[indexPath.row])
+        cell.configureForItem(categories[indexPath.row].name)
         return cell
     }
     
