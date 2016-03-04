@@ -46,7 +46,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="UdderMilk" id="Ymf-6T-VDL">
-                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="46g-SG-nNR">
+                        <barButtonItem key="leftBarButtonItem" image="Menu-29" id="46g-SG-nNR">
                             <connections>
                                 <action selector="menuTapped:" destination="b5g-YC-Gkn" id="MIh-TM-v4y"/>
                             </connections>
@@ -241,6 +241,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Menu-29" width="29" height="29"/>
         <image name="menu-alt-16" width="400" height="359"/>
     </resources>
     <inferredMetricsTieBreakers>
