@@ -30,11 +30,11 @@
                         <viewControllerLayoutGuide type="bottom" id="RRo-KK-XcO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GPo-a3-Zfm">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Welcome to Udder Milk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECu-hm-utO">
-                                <rect key="frame" x="53" y="257" width="179" height="20.5"/>
+                                <rect key="frame" x="10" y="94" width="179" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="179" id="3LD-6g-z2p"/>
                                 </constraints>
@@ -42,6 +42,56 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" bounces="NO" pagingEnabled="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1t-YB-VQF">
+                                <rect key="frame" x="0.0" y="150" width="300" height="350"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">THE MAIN REASON WE ARE HERE FOR YOU IS THAT THERE IS NO MORE MILK LEFT IN THE  STORE THIS REALLY IS NO JOKE 
+ALL MILK HAS BEEN TAMPERED WITH AND ITS BEEN CHANGED EVEN THE ORGANIC ONE ITS NOT IN ITS TRUE FORM ANYMORE BECAUSE OF PASTURIZATION AND HOMOGINATION  and ULTRA - PASTURAZATION AND ITS GETTING PEOPLE SICK WE HAVE PROOF WE HAVE LOTS OF PROOF YOU ARE NOT LACTOSE INTOLERANT YOU ARE PASTURAZATION AND HOMOGINATION INTOLERANT THIS IS NO  JOKE THIS IS REALITY
+ 
+We strive to make our customers happy and healthy with fresh from the farm,pesticide free,incesticide free,funguscide free,herbacide free,antibiotic free,irradiation free,GMO free, grass-fed  fresh dairy ,no grain is ever give to the cows that are for all the dairy and also the beef cows for the meat
+ALL THE FARMERS WE DEAL WITH ARE PESTICDE,HERBACIDE,FUNGUSCIDE,INSECTICIDE,FREE AS WELL AS GMO SEED FREE,AS WELL AS THEY DO NOT IRRADIATE THEIR FOOD. OUR FARMERS CHOOSE THIS WAY OF FARMING MANY YEARS AGO AND  WE TRUST THAT OUR FARMERS ADHERE ALL THE TIME TO THESE PRINCIPLES OF THIS TYPE OF SUSTANIABLE CLEAN  FARMING.
+ WE GET OUR FOOD FROM MOSTLY NON AMISH FARMS NOW ,THE REST ARE AMISH WHICH ARE A FEW.
+ 
+All of the farmers we deal with have plenty of acreage so that the nutrition quality is never compromised, much rotation of grazing.
+This is the land of milk (RAW ) and honey (LOCAL)
+The food in America has been dirty for way to long, there seems to be more supermarkets than farms that are situated near ones home these days.
+People are rushing to take this supplement and that supplement which are not in their true form anymore,they have been processed even if they are  organic.Organic foods do excist,however food coming to you withing 1-2 days after its harvested or made is what we offer to you.
+ 
+                               GIVE ME LIBERTY (WITH RAW / FRESH DAIRY)
+                                               OR GIVE ME DEATH
+                           (WITH STORE BOUGHT KNOCK-OFF / FAKE DAIRY)
+           IT IS A CRIME TO SAY SOMETHING IS SOMETHING WHEN ITS REALLY NOT ..IN THE GARMENT INDUSTRY  A DESIGNER IS SUBJECT TO WHAT THEY CALL A " KNOCK-OFF " ARTIST THESE PEOPLE TAKE CHEAPER FABRIC  AND COPY OR TRY TO COPY THE ORIGINAL THEN PUT A LABLE ON IT FROM THE ORIGINAL DESIGNER AND CALL IT THE ORIGINAL,CALL IT THEIRS,..WHEN IN FACT IT IS JUST A FAKE,IT MIGHT LOOSE COLOR WHEN WASHED&lt;FALL APART REAL QUICK&lt;SHRINK WHEN WASHED ETC ...THIS IS A CRIME AND CONSIDERED A CRIME. 
+SO THIS IS THE SAME WITH THE MILK ONLY  CERTIAN PEOPLE ARE TELLING FARMERS   THEY  HAVE TO COMMIT THIS CRIME AND SOME FARMERS ARE ACTUALLY COMMITTING IT THEMSELVES WITHOUT ANY HELP.THEY ARE CHANGING THE MILK TO WHERE ITS NOT MILK ANYMORE.THEY CANNOT  LEGALLY LABEL IT the word " MILK " ANYMORE BY DOING THIS.
+ 
+ 
+ 
+Many supplements have been so far removed from their original form that mostly all nutrients are gone.
+EXCEPT ONE WE KNOW RAW DAIRY,,Pickled foods,Fermented Foods and fresh from the harvest garden Vegetables. We believe that eating foods that are farm fresh LOCAL and farmed the proper way can be more healthier than any supplement.
+WHY LOCAL...NOT JUST FOR THE ECONOMY, FOR THE HEALTH BENEFITS FROM THAT REGION WHERE YOU LIVE ,ALL THE FLORA/BACTERIA  IS IN THE FOOD,according to most Master Herbalists this is considered innoculation against disease,a strenghthining of the immune system big time.
+We gladly serve the Mentally Disabled,Vaccine Damaged, GMO  food damaged individuals,Physically Disabled, Cancer Patients, Cardiac Patients, COLITIS PATIENTS,CHRONES DISEASE PATIENTS, ACID REFLUX INDIVIDUALS ,AND ANYONE ELSE THAT WANTS TO STAY HEALTHY BY DRINKING RAW GRASS FED ORGANIC MILK.
+ LACTOSE INTOLERANT ????????????    LOL   LOL   LOL   
+ IS WHAT THE  PASTURIZED DAIRY INDUSTRY LEADS YOU TO BELIEVE. THEY COVER THEIR MISTAKE OF PASTURIZATION AND HOMOGENIZATION BY SAYING YOU ARE LACTOSE INTOLERANT, ONE OF THE SIDE EFFECTS OF PASTURAZATION IS  gas,cramps,poor digestion,diahreea. AND  HOMOGINAZATION MAKES FAT GLOBULES SMALLER  WHICH IN TURN MAKES THEM ABLE TO GO INTO YOUR ARTERIES  AND MAKE PLAQUE .
+PLEASE GET IN THE HABIT OF SAYING YOU ARE PASTURAZATION INTOLERANT AND HOMOGINAZATION INTOLERANT.
+ALTHOUGH  SOME INDIVIDUALS THOUGH CANNOT TOLERATE RAW MILK AT ALL,  But THEY CAN USUALLY EAT THE CREAM AND THE BUTTER . and Ice Cream .I SAY TOLERATE MEANING THEY usually will get the flu like symptoms as if they were getting"sick"from unclean milk buts its really that they cannot tolerate raw dairy at all .Usually these people can olny tolerate the cream and the butter and ice cream as well. This is usually rare as most people tolerate raw dairy extremely well.This percentage of individuals is not what you are seeing now in the general public is roughly 1%.We have met them ,my daughter included...whne consuming the ram milk they get gas,cramps , upset stomach.
+ 
+Allergy Sufferers, Auto- Immune, Autism patients, Anyone else that is in bad health, Anyone that is sick and tired of being sick and tired (BUT REMEMBER THAT WHEN YOU HAVE PATIENCE FOR YOUR SICKNESS   GOD  REWARDS YOU MORE) anyone that finds it extremely difficult to drive to the farm every week to pick up these fresh foods for themself to maintain their health so they dont getsick
+We make sure the farms we get ours and your  food from are careful with the grain ,if they have to use grain for instance for the chickens and goats.
+Most of the farmers in the area where we purchase your food from still purchase GMO free grain that still has pesticides in it. They will tell you its GMO free but its still dirty grain.The farms we get from, either grow their own food or purchase grain from organic Unlimited.They do not purcahse their grain from the other feed supplier in the area.
+We also know we are not the farmer direct...but this can be a plus  for you as a consumer,as we  in  a small way can monitor what we are bringing you to eat. This  keeps our  standard high .From time to time we can get food items that need to be brought up to a better quality.If a farmer does not want to bring it up for us and make it right we move on ...try to find another small  farmer that can make the item better as we once had it .This farmer may also be way out of the area.But  if we have an item that everyone likes for  instance butter,we keep searching for a better butter.We find it.Every thing then remains the same.But we will not lower our standards and still keep ordering from that farmer his product that has lost  quality.
+ENJOY ALL THE THINGS YOU RECIEVE FROM US AND REMEMBER IF THERE IS ANYTHING THAT IS NOT SUITABLE PLEASE LET US KNOW ,
+DONT BE SHY.
+AND IN EVERY BIT AND SIP ALLWAYS REMEMBER TO THANK GOD FOR THIS FOOD BEFORE AND AFTER YOU FINISH..
+AND PLEASE ,IF YOU LIKE,........ GET IN THE HABIT OF SAYING THAT THEY HAVE AN ILLEGAL BAN  AGAINST THIS KIND OF DAIRY TOWARDS WE THE PEOPLE ...its not illegal....  ITS AN ILLEGAL BAN AGAINST US.AGAINST US IN THE U.S.A.
+Maybe these folks should leave America,the ones that are causing all these problems.This is not the American way...sounds more like a communist country.This is not what and how America was built upon.
+  AGAIN ...ITS NOT ILLEGAL
+WHAT IS ILLEGAL, IS IF WE BRING YOU MILK THAT WILL GET YOU SICK.
+We have proof as I have mentioned  in the opening paragraph ,of how many folks this milk has helped with their dis- ease,or dis- order.
+Its mind boggling !!!
+Especially the one called   LACTOSE INTOLERANT
+KATHY</mutableString>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -52,7 +102,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="titleLabel" destination="ECu-hm-utO" id="Pch-zf-HQG"/>
                     </connections>
