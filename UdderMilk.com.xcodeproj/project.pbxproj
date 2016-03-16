@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9C1310821C89297900125428 /* Menu-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1310811C89297900125428 /* Menu-29.png */; };
+		9C1310841C8D36A500125428 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1310831C8D36A500125428 /* ShopViewController.swift */; };
 		9C36BCCC1BB3806000792970 /* CategoryItemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36BCCB1BB3806000792970 /* CategoryItemsController.swift */; };
 		9C3CA9E81BD30BF400F99666 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3CA9E71BD30BF400F99666 /* CenterViewController.swift */; };
 		9C3CA9EA1BD44F6300F99666 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3CA9E91BD44F6300F99666 /* MenuViewController.swift */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		9C1310811C89297900125428 /* Menu-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu-29.png"; sourceTree = "<group>"; };
+		9C1310831C8D36A500125428 /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		9C36BCCB1BB3806000792970 /* CategoryItemsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryItemsController.swift; sourceTree = "<group>"; };
 		9C3CA9E71BD30BF400F99666 /* CenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
 		9C3CA9E91BD44F6300F99666 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				9C9EBE701B95224B009A9670 /* Info.plist */,
 				9C36BCCB1BB3806000792970 /* CategoryItemsController.swift */,
 				9C3CA9E71BD30BF400F99666 /* CenterViewController.swift */,
+				9C1310831C8D36A500125428 /* ShopViewController.swift */,
 				9C4471241C710BD800362DAF /* ContainerViewController.swift */,
 			);
 			path = UdderMilk.com;
@@ -323,6 +326,7 @@
 			files = (
 				9C9EBEBC1B9A4848009A9670 /* Category.swift in Sources */,
 				9C36BCCC1BB3806000792970 /* CategoryItemsController.swift in Sources */,
+				9C1310841C8D36A500125428 /* ShopViewController.swift in Sources */,
 				9C4471251C710BD800362DAF /* ContainerViewController.swift in Sources */,
 				9C9EBE651B95224B009A9670 /* MasterViewController.swift in Sources */,
 				9C3CA9E81BD30BF400F99666 /* CenterViewController.swift in Sources */,

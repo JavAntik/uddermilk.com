@@ -25,10 +25,12 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" bounces="NO" pagingEnabled="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1t-YB-VQF">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" bounces="NO" pagingEnabled="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1t-YB-VQF">
                                 <rect key="frame" x="0.0" y="150" width="300" height="350"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">THE MAIN REASON WE ARE HERE FOR YOU IS THAT THERE IS NO MORE MILK LEFT IN THE  STORE THIS REALLY IS NO JOKE 
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">THE MAIN REASON WE ARE HERE FOR YOU IS THAT THERE IS NO MORE MILK LEFT IN THE  STORE THIS REALLY IS NO JOKE 
 ALL MILK HAS BEEN TAMPERED WITH AND ITS BEEN CHANGED EVEN THE ORGANIC ONE ITS NOT IN ITS TRUE FORM ANYMORE BECAUSE OF PASTURIZATION AND HOMOGINATION  and ULTRA - PASTURAZATION AND ITS GETTING PEOPLE SICK WE HAVE PROOF WE HAVE LOTS OF PROOF YOU ARE NOT LACTOSE INTOLERANT YOU ARE PASTURAZATION AND HOMOGINATION INTOLERANT THIS IS NO  JOKE THIS IS REALITY
  
 We strive to make our customers happy and healthy with fresh from the farm,pesticide free,incesticide free,funguscide free,herbacide free,antibiotic free,irradiation free,GMO free, grass-fed  fresh dairy ,no grain is ever give to the cows that are for all the dairy and also the beef cows for the meat
@@ -71,8 +73,13 @@ WHAT IS ILLEGAL, IS IF WE BRING YOU MILK THAT WILL GET YOU SICK.
 We have proof as I have mentioned  in the opening paragraph ,of how many folks this milk has helped with their dis- ease,or dis- order.
 Its mind boggling !!!
 Especially the one called   LACTOSE INTOLERANT
-KATHY</mutableString>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+KATHY</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -92,6 +99,39 @@ KATHY</mutableString>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7VK-rx-Izj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-742" y="-1016"/>
+        </scene>
+        <!--UdderMilk - Shop-->
+        <scene sceneID="PI7-dj-BVg">
+            <objects>
+                <viewController storyboardIdentifier="ShopViewController" id="l2T-Cx-1sf" customClass="ShopViewController" customModule="UdderMilk_com" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cgr-0e-isT"/>
+                        <viewControllerLayoutGuide type="bottom" id="GtY-MK-s35"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XZQ-8F-0DQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="testtesttesttest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1Y-t3-oeK">
+                                <rect key="frame" x="39" y="78" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="UdderMilk - Shop" id="nZA-oN-eHT">
+                        <barButtonItem key="leftBarButtonItem" image="Menu-29" id="QyH-j8-fRE">
+                            <connections>
+                                <action selector="menuTapped:" destination="b5g-YC-Gkn" id="5iv-ZT-hUF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="El2-dr-7Ch" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-559" y="-632"/>
         </scene>
         <!--Master-->
         <scene sceneID="smW-Zh-WAh">

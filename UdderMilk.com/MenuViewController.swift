@@ -14,12 +14,10 @@ protocol MenuViewControllerDelegate {
 }
 
 class MenuViewController: UIViewController {
-    
     @IBOutlet weak var tableView: UITableView!
     var delegate: MenuViewControllerDelegate?
     var categories: [Category] = [Category]()
 
-    
     struct TableView {
         struct CellIdentifiers {
             static let StringCell = "StringCell"
@@ -31,7 +29,6 @@ class MenuViewController: UIViewController {
         super.viewDidLoad()
         tableView.reloadData()
     }
-
 }
 
 extension MenuViewController: UITableViewDataSource {

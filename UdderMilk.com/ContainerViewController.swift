@@ -16,8 +16,10 @@ enum SlideOutState {
 
 class ContainerViewController: UIViewController {
     var centerNavigationController: UINavigationController!
+    var centerShopNavigationController: UINavigationController!
     var centerViewController: CenterViewController!
     var menuViewController: MenuViewController!
+    var shopViewController: ShopViewController!
     
     var currentState: SlideOutState = .AllCollapsed
     
@@ -36,6 +38,9 @@ class ContainerViewController: UIViewController {
         addChildViewController(centerNavigationController)
         
         centerNavigationController.didMoveToParentViewController(self)
+        
+        shopViewController  = UIStoryboard.shopViewController()
+        centerShopNavigationController = UINavigationController(rootViewController: shopViewController)
     }
 }
 extension ContainerViewController: CenterViewControllerDelegate {
@@ -63,7 +68,7 @@ extension ContainerViewController: CenterViewControllerDelegate {
         }
     }
     func addChildSidePanelController(menuController: MenuViewController) {
-        menuController.delegate = centerViewController
+        menuController.delegate = self
         view.insertSubview(menuController.view, atIndex: 0)
         
         addChildViewController(menuController)
@@ -115,12 +120,32 @@ private extension UIStoryboard {
     class func menuViewController() -> MenuViewController? {
         return mainStoryboard().instantiateViewControllerWithIdentifier("MenuViewController") as? MenuViewController
     }
-        
-        //class func rightViewController() -> SidePanelViewController? {
-        //    return mainStoryboard().instantiateViewControllerWithIdentifier("RightViewController") as? SidePanelViewController
-        //}
-        
+    
     class func centerViewController() -> CenterViewController? {
         return mainStoryboard().instantiateViewControllerWithIdentifier("CenterViewController") as? CenterViewController
+    }
+    
+    class func shopViewController() -> ShopViewController? {
+        return mainStoryboard().instantiateViewControllerWithIdentifier("ShopViewController") as? ShopViewController
+    }
+}
+
+extension ContainerViewController: MenuViewControllerDelegate {
+    func menuItemSelected(item: Int) {
+        switch (item) {
+        case 20:
+            centerNavigationController = UINavigationController(rootViewController: centerViewController)
+            view.addSubview(centerNavigationController.view)
+            addChildViewController(centerNavigationController)
+            
+            centerNavigationController.didMoveToParentViewController(self)
+        default:
+            view.addSubview(centerShopNavigationController.view)
+            addChildViewController(centerShopNavigationController)
+            
+            centerShopNavigationController.didMoveToParentViewController(self)
+            
+        }
+        collapseSidePanels()
     }
 }
